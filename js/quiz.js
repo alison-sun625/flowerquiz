@@ -154,7 +154,7 @@ const personalities = {
     "Baby's Breath": 0
 }
 
-let currentQuestionIndex = 1;       // what question are we on?
+let currentQuestionIndex = 0;       // what question are we on?
 
 function displayQuestion(questionNum) {        // display each question and its choices
     // const currentQuestion = questions[currentQuestionIndex];
@@ -166,10 +166,12 @@ function displayQuestion(questionNum) {        // display each question and its 
     // img.src = questions[questionNum].image;
     // questionImage.src = img.src;
 
+    choicesContainer.innerHTML = '';
+
     questionText.textContent = questions[questionNum].question;
 
     // create buttons for each question 
-    for (const [choice, info] of Object.entries(gameData[state].choices)) {
+    for (const [choice, info] of Object.entries(questions[state].choices)) {
         const button = document.createElement('button');
         button.textContent = choice;
         button.className = 'choice-button';
@@ -238,7 +240,7 @@ function showResult() {
 }
 
 function startQuiz() {
-    currentQuestionIndex = 1;
+    currentQuestionIndex = 0;
     // do some display stuff
     displayQuestion(currentQuestionIndex)
 }
