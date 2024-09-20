@@ -5,7 +5,7 @@ const questions = {
         "choices": {
             "Utensils — everyone always forgets them!": [2, ["Lavender", ]],
             "A blanket — there would be no picnic without me": [2, []],
-            "My famous": [2, []],
+            "My famous banana bread": [2, ["Rose"]],
             "A bag of chips": [2, []],
             "Some drinks": [2, []]
         }
@@ -16,7 +16,7 @@ const questions = {
         // image
         "choices": {
             "Well, goodbye world": [3, []],
-            "Try to remember what you read about it on the Internet": [3, []],
+            "Quick!! How did that infographic say to tuck my arms?": [3, []],
             "Scream for help!": [3, []],
             "Pray that there aren't rocks at the bottom": [3, []]
         }
@@ -26,11 +26,10 @@ const questions = {
         "question": "You're at a big career event and it's time to network! What's the move?",
         // image
         "choices": {
-            "A": [],
-            "B": [],
-            "C": [],
-            "D": [],
-            "E": []
+            "Lurk in a corner. I need a second to pluck up my courage!": [4, []],
+            "Walk around aimlessly. Hopefully someone will catch my eye!": [4, ["Daisy"]],
+            "Go right up to the most accomplished-looking flower in the room!": [4, ["Tulip", "Bluebell"]],
+            "Try to find my friends": [4, []]
         }
     },
 
@@ -38,24 +37,24 @@ const questions = {
         "question": "You've just been granted immortality. Choose one thing to take with you throughout the rest of eternity.",
         // image
         "choices": {
-            "A": [],
-            "B": [],
-            "C": [],
-            "D": [],
-            "E": []
+            "A": [5, []],
+            "B": [5, []],
+            "C": [5, []],
+            "D": [5, []],
+            "E": [5, []]
         }
     },
 
     "5": {
-        "question": "Choose a band:",
+        "question": "Choose a song:",
         // image
         "choices": {
-            "BTS": [],
-            "Mother Mother": [],
-            "Her's": [],
-            "Fleetwood Mac": [],
-            "The 1975": [],
-            "wave to earth": []
+            "\"Daisy\" - Pentagon": [6, []],
+            "\"Magnolia\" - Lauvey": [6, []],
+            "\"Sunflower\" - Post Malone, Swae Lee": [6, []],
+            "\"La vie en Rose\" - Edith Piaf": [6, []],
+            "\"Ivy\" - Frank Ocean": [6, []],
+            "\"Lilac Wine\" - Jeff Buckley": [6, []]
         }
     },
 
@@ -63,10 +62,10 @@ const questions = {
         "question": "It is important that others like me.",
         // image
         "choices": {
-            "Agree": [],
-            "Neutral": [],
-            "Disagree": [],
-            "\"I need everyone to like me so much, it’s exhausting\" - John Mulaney": []
+            "Agree": [7, []],
+            "Neutral": [7, []],
+            "Disagree": [7, []],
+            "\"I need everyone to like me so much, it’s exhausting\" - John Mulaney": [7, []]
         }
     },
 
@@ -74,13 +73,13 @@ const questions = {
         "question": "Which of the seven deadly sins resonates the most with you?",
         // image
         "choices": {
-            "Pride": [],
-            "Greed": [],
-            "Gluttony": [],
-            "Sloth": [],
-            "Wrath": [],
-            "Lust": [],
-            "Envy": []
+            "Pride — ": [8, ["Daisy"]],
+            "Greed": [8, ["Sunflower"]],
+            "Gluttony": [8, ["Tulip"]],
+            "Sloth": [8, ["Baby's Breath"]],
+            "Wrath": [8, ["Rose"]],
+            "Lust": [8, ["Bluebell"]],
+            "Envy": [8, ["Rose"]]
         }
     },
 
@@ -88,10 +87,10 @@ const questions = {
         "question": "Lorem Ipsum",
         // image
         "choices": {
-            "A": [],
-            "B": [],
-            "C": [],
-            "D": []
+            "A": [9, ["Daisy"]],
+            "B": [9, ["Daisy"]],
+            "C": [9, []],
+            "D": [9, []]
         }
     },
 
@@ -104,7 +103,7 @@ const questions = {
             "Creativity": [10, ["Bluebell"]],
             "Ambition": [10, ["Tulip"]],
             "Kindness": [10, ["Daisy"]],
-            "Compassion": [10, ["Sunflower"]],
+            "Compassion": [10, ["Sunflower", "Daisy"]],
             "Honesty": [10, ["Lavender"]]
         }
     },
@@ -113,10 +112,10 @@ const questions = {
         "question": "Lorem Ipsum",
         // image
         "choices": {
-            "A": [],
-            "B": [],
-            "C": [],
-            "D": []
+            "A": [11, ["Daisy"]],
+            "B": [11, ["Rose"]],
+            "C": [11, ["Tulip"]],
+            "D": [11, ["Daisy"]]
         }
     },
 
@@ -124,21 +123,21 @@ const questions = {
         "question": "Lorem Ipsum",
         // image
         "choices": {
-            "A": [],
-            "B": [],
-            "C": [],
-            "D": []
+            "A": [12, ["Daisy"]],
+            "B": [12, ["Rose"]],
+            "C": [12, ["Sunflower"]],
+            "D": [12, ["Bluebell"]]
         }
     },
 
     "12": {
-        "question": "Lorem Ipsum",
+        "question": "THIS IS THE END!",
         // image
         "choices": {
-            "A": [],
-            "B": [],
-            "C": [],
-            "D": []
+            "A": [13, []],
+            "B": [13, []],
+            "C": [13, []],
+            "D": [13, []]
         }
     }
 
@@ -157,7 +156,12 @@ const personalities = {
 let currentQuestionIndex = 0;       // what question are we on?
 
 function displayQuestion(questionNum) {        // display each question and its choices
-    // const currentQuestion = questions[currentQuestionIndex];
+    startContainer = document.getElementById('start-container');
+    startContainer.style.display='none';
+
+    // console.log('questionNum:', questionNum);
+    const currentQuestion = questions[questionNum];
+    // console.log('currentQuestion:', currentQuestion);
     const questionText = document.getElementById('question-text');
     // const questionImage = document.getElementById('question-image');
     const choicesContainer = document.getElementById('choices');
@@ -171,26 +175,26 @@ function displayQuestion(questionNum) {        // display each question and its 
     questionText.textContent = questions[questionNum].question;
 
     // create buttons for each question 
-    for (const [choice, info] of Object.entries(questions[state].choices)) {
+    for (const [choice, info] of Object.entries(currentQuestion.choices)) {
         const button = document.createElement('button');
         button.textContent = choice;
         button.className = 'choice-button';
         let nextState = info[0];
         button.onclick = () => nextQuestion(nextState, info[1]); 
+        
         choicesContainer.appendChild(button);
     };
 }
 
-function nextQuestion(selectedPersonalities) {           // log choice, move to next question, show result if at the end
-    // const currentQuestion = questions[currentQuestionIndex];
-
+function nextQuestion(newState, selectedPersonalities) {           // log choice, move to next question, show result if at the end
     selectedPersonalities.forEach(personality => {
         personalities[personality]++;
+        console.log(personalities);
     });
 
-    currentQuestionIndex++;
+    currentQuestionIndex = newState;
 
-    if (currentQuestionIndex < questions.length) {
+    if (newState <= Object.keys(questions).length) {
         displayQuestion(currentQuestionIndex);
     } 
     else {
@@ -199,6 +203,13 @@ function nextQuestion(selectedPersonalities) {           // log choice, move to 
 }
 
 function showResult() {
+    const questionText = document.getElementById('question-text');
+    const choicesContainer = document.getElementById('choices');
+    const resultsContainer = document.getElementById('result-container');
+
+    questionText.style.display = 'none';            // hide question text and choice options
+    choicesContainer.style.display = 'none';
+
     // count flowers
 
     // load flower result img
@@ -207,40 +218,45 @@ function showResult() {
     // const img = new Image();
     // resultImage.src = resultPath;
     // resultImage.className = 'responsive-image'; 
-    console.log("finish");
+    // console.log("finish");
 
     // sharing setup
-    const shareButton = document.createElement('button');
-    shareButton.textContent = 'Share with the rest of your garden!';
-    shareButton.className = 'choice-button';
+    
+    // console.log("finish");
 
     // show flower result img: image onload plus text
 
     // share result api call
 
-    // const shareData = {
-    //     title: "MDN",
-    //     text: "Learn web development on MDN!",
-    //     url: "https://developer.mozilla.org",
-    //     flower image
-    //   };
+    const shareData = {
+        title: "What Flower are You?",
+        text: "Lorem Ipsum Flower Quiz!",
+        url: "https://alison-sun625.github.io/flowerquiz/",
+        // flower image
+      };
       
     //   const btn = document.querySelector("button");
-    //   const resultPara = document.querySelector(".result");
+      const resultPara = document.querySelector(".result");
+    //   console.log(resultPara);
+
+        const shareButton = document.createElement('button');
+        shareButton.textContent = 'Share with the rest of your garden!';
+        shareButton.className = 'choice-button';
+        resultsContainer.appendChild(shareButton);
       
     // Share must be triggered by "user activation"
-    //   btn.addEventListener("click", async () => {
-    //     try {
-    //       await navigator.share(shareData);
-    //       resultPara.textContent = "MDN shared successfully";
-    //     } catch (err) {
-    //       resultPara.textContent = `Error: ${err}`;
-    //     }
-    //   });    
+      shareButton.addEventListener("click", async () => {
+        try {
+          await navigator.share(shareData);
+          resultPara.textContent = "MDN shared successfully";
+        } catch (err) {
+          resultPara.textContent = `Error: ${err}`;
+        }
+      });    
 }
 
 function startQuiz() {
-    currentQuestionIndex = 0;
+    currentQuestionIndex = 1;
     // do some display stuff
     displayQuestion(currentQuestionIndex)
 }

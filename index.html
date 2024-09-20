@@ -9,10 +9,11 @@
 
     <body>
         <div class="container">
-            <div class="title">What flower are you?</div> 
-            <img id="homescreen" style="padding-bottom: 15px" src="" alt="Story Image"/>
-            <a class="start-button" onclick="startQuiz()">Start</a>
-            
+            <div class="start-container" id="start-container">
+                <div class="title">What flower are you?</div> 
+                <img id="homescreen" style="padding-bottom: 15px" src="" alt="Story Image"/>
+                <button id="start-button" onclick="startQuiz()">Start</button>
+            </div>
             <div class="game-container" id="game-container">
                 <div class ="question-text" id="question-text"></div>
                 <div class="image-container">
@@ -20,6 +21,8 @@
                 </div>
                 <div class="choices" id="choices"></div>
             </div>
+
+            <div id="result-container" id="result-container"></div>
     
         </div>
         <script src="js/quiz.js">
