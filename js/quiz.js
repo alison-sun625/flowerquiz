@@ -3,11 +3,11 @@ const questions = {
         "question": "You and your flower friends are planning a fun picnic. What are you bringing?",
         // image
         "choices": {
-            "Utensils — everyone always forgets them!": [2, ["Lavender", ]],
-            "A blanket — there would be no picnic without me": [2, []],
-            "My famous banana bread": [2, ["Rose"]],
-            "A bag of chips": [2, []],
-            "Some drinks": [2, []]
+            "Utensils bc everyone always forgets them!": [2, ["Lavender"]],
+            "A blanket — there would be no picnic without me": [2, ["Rose"]],
+            "My famous banana bread": [2, ["Rose", "Daisy"]],
+            "A bag of hot chip!": [2, ["Sunflower", "Bluebell"]],
+            "My new favorite soda that went viral on Flowergram": [2, ["Tulip"]]
         }
     },
 
@@ -15,10 +15,11 @@ const questions = {
         "question": "You're about to be swept over the edge of a waterfall! What do you do?",
         // image
         "choices": {
-            "Well, goodbye world": [3, []],
-            "Quick!! How did that infographic say to tuck my arms?": [3, []],
-            "Scream for help!": [3, []],
-            "Pray that there aren't rocks at the bottom": [3, []]
+            "Well, goodbye world": [3, ["Sunflower"]],
+            "Quick!! How did that infographic say to tuck my arms?": [3, ["Daisy", "Tulip"]],
+            "Scream for help!": [3, ["Rose"]],
+            "Struggle frantically for the shore": [3, ["Bluebell"]],
+            "Pray that there aren't rocks at the bottom": [3, ["Lavender"]]
         }
     },
 
@@ -26,22 +27,21 @@ const questions = {
         "question": "You're at a big career event and it's time to network! What's the move?",
         // image
         "choices": {
-            "Lurk in a corner. I need a second to pluck up my courage!": [4, []],
-            "Walk around aimlessly. Hopefully someone will catch my eye!": [4, ["Daisy"]],
+            "Lurk in a corner. I need a second to pluck up my courage!": [4, ["Sunflower"]],
+            "Walk around aimlessly. Hopefully someflower will come up to me!": [4, ["Daisy", "Rose"]],
             "Go right up to the most accomplished-looking flower in the room!": [4, ["Tulip", "Bluebell"]],
-            "Try to find my friends": [4, []]
+            "Try to find my friends": [4, ["Lavender"]]
         }
     },
 
     "4": {
-        "question": "You've just been granted immortality. Choose one thing to take with you throughout the rest of eternity.",
+        "question": "What is your best flower feature?",
         // image
         "choices": {
-            "A": [5, []],
-            "B": [5, []],
-            "C": [5, []],
-            "D": [5, []],
-            "E": [5, []]
+            "My bright color": [5, ["Rose", "Sunflower", "Tulip"]],
+            "My silky petals": [5, ["Tulip", "Bluebell"]],
+            "My tall stem": [5, ["Sunflower"]],
+            "My calming scent": [5, ["Daisy", "Lavender"]]
         }
     },
 
@@ -49,12 +49,12 @@ const questions = {
         "question": "Choose a song:",
         // image
         "choices": {
-            "\"Daisy\" - Pentagon": [6, []],
-            "\"Magnolia\" - Lauvey": [6, []],
-            "\"Sunflower\" - Post Malone, Swae Lee": [6, []],
-            "\"La vie en Rose\" - Edith Piaf": [6, []],
-            "\"Ivy\" - Frank Ocean": [6, []],
-            "\"Lilac Wine\" - Jeff Buckley": [6, []]
+            "\"Magnolia\" - Laufey": [6, ["Daisy"]],
+            "\"Sunflower\" - Post Malone, Swae Lee": [6, ["Tulip"]],
+            "\"La vie en Rose\" - Edith Piaf": [6, ["Rose"]],
+            "\"Ivy\" - Frank Ocean": [6, ["Lavender"]],
+            "\"Bloom\" - Troye Sivan": [6, ["Sunflower"]],
+            "\"Flowers\" - Miley Cyrus": [6, ["Bluebell"]]
         }
     },
 
@@ -62,35 +62,35 @@ const questions = {
         "question": "It is important that others like me.",
         // image
         "choices": {
-            "Agree": [7, []],
-            "Neutral": [7, []],
-            "Disagree": [7, []],
-            "\"I need everyone to like me so much, it’s exhausting\" - John Mulaney": [7, []]
+            "Yup!": [7, ["Rose", "Sunflower"]],
+            "Ehh, it's alright": [7, ["Lavender"]],
+            "YOLO!!!": [7, ["Bluebell"]],
+            "\"I need everyone to like me so much, it’s exhausting\" - John Mulaney": [7, ["Daisy", "Tulip"]]
         }
     },
 
     "7": {
-        "question": "Which of the seven deadly sins resonates the most with you?",
+        "question": "Lorem Ipsum",
         // image
         "choices": {
-            "Pride — ": [8, ["Daisy"]],
-            "Greed": [8, ["Sunflower"]],
-            "Gluttony": [8, ["Tulip"]],
-            "Sloth": [8, ["Baby's Breath"]],
-            "Wrath": [8, ["Rose"]],
-            "Lust": [8, ["Bluebell"]],
-            "Envy": [8, ["Rose"]]
+            "A": [8, ["Daisy"]],
+            "B": [8, ["Sunflower"]],
+            "C": [8, ["Tulip"]],
+            "D": [8, ["Bluebell"]],
+            "E": [8, ["Rose"]],
+            "F": [8, ["Bluebell"]],
+            "G": [8, ["Rose"]]
         }
     },
 
     "8": {
-        "question": "Lorem Ipsum",
+        "question": "How social are you?",
         // image
         "choices": {
-            "A": [9, ["Daisy"]],
-            "B": [9, ["Daisy"]],
-            "C": [9, []],
-            "D": [9, []]
+            "I have good friends, but it's usually just me in this flowerpot": [9, ["Bluebell"]],
+            "I have a few really close friends in my garden": [9, ["Daisy", "Sunflower"]],
+            "I love hanging out in a big field of flowers!": [9, ["Rose", "Lavender"]],
+            "I can vibe with anyflower, as long as they don't ruffle my petals": [9, ["Tulip"]]
         }
     },
 
@@ -109,13 +109,15 @@ const questions = {
     },
 
     "10": {
-        "question": "Lorem Ipsum",
+        "question": "Choose an \"unrealistic\" job:",
         // image
         "choices": {
-            "A": [11, ["Daisy"]],
-            "B": [11, ["Rose"]],
-            "C": [11, ["Tulip"]],
-            "D": [11, ["Daisy"]]
+            "Underwater basket weaver": [11, ["Sunflower"]],
+            "K-pop idol": [11, ["Tulip"]],
+            "Dog hairdresser": [11, ["Bluebell"]],
+            "Professional mourner": [11, ["Rose"]],
+            "Panda nanny": [11, ["Daisy"]],
+            "Celebrity gossip YouTuber": [11, ["Lavender"]]
         }
     },
 
@@ -149,8 +151,7 @@ const personalities = {
     "Rose": 0,
     "Lavender": 0,
     "Tulip": 0,
-    "Bluebell": 0,
-    "Baby's Breath": 0
+    "Bluebell": 0
 }
 
 let currentQuestionIndex = 0;       // what question are we on?
@@ -189,7 +190,7 @@ function displayQuestion(questionNum) {        // display each question and its 
 function nextQuestion(newState, selectedPersonalities) {           // log choice, move to next question, show result if at the end
     selectedPersonalities.forEach(personality => {
         personalities[personality]++;
-        console.log(personalities);
+        // console.log(personalities);
     });
 
     currentQuestionIndex = newState;
@@ -203,14 +204,25 @@ function nextQuestion(newState, selectedPersonalities) {           // log choice
 }
 
 function showResult() {
+    let maxCount = 0;
+    let maxFlower = '';
+
+    for (const [flower, count] of Object.entries(personalities)) {
+        if (count > maxCount) {
+            maxCount = count;
+            maxFlower = flower;
+        }
+    }
+
     const questionText = document.getElementById('question-text');
     const choicesContainer = document.getElementById('choices');
     const resultsContainer = document.getElementById('result-container');
+    const resultText = document.getElementById('result-text');
+
+    resultText.textContent = `You got... ${maxFlower}!`;
 
     questionText.style.display = 'none';            // hide question text and choice options
     choicesContainer.style.display = 'none';
-
-    // count flowers
 
     // load flower result img
     // const resultImage = document.getElementById('image');
