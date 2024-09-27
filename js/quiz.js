@@ -70,16 +70,14 @@ const questions = {
     },
 
     "7": {
-        "question": "Lorem Ipsum",
+        "question": "Choose somewhere oddly specific to bloom:",
         // image
         "choices": {
-            "A": [8, ["Daisy"]],
-            "B": [8, ["Sunflower"]],
-            "C": [8, ["Tulip"]],
-            "D": [8, ["Bluebell"]],
-            "E": [8, ["Rose"]],
-            "F": [8, ["Bluebell"]],
-            "G": [8, ["Rose"]]
+            "The windowsill box of a kindly old woman": [8, ["Daisy"]],
+            "Inside a red clay flowerpot owned by someone who isn't very good with plants": [8, ["Sunflower"]],
+            "A crack in the sidewalk of a sleepy neighborhood": [8, ["Rose"]],
+            "On a rocky cliff overlooking the ocean": [8, ["Lavender"]],
+            "In a flower arrangement at your cousin's wedding": [8, ["Tulip", "Bluebell"]]
         }
     },
 
@@ -122,27 +120,69 @@ const questions = {
     },
 
     "11": {
-        "question": "Lorem Ipsum",
+        "question": "How would you describe your fashion sense?",
         // image
         "choices": {
-            "A": [12, ["Daisy"]],
-            "B": [12, ["Rose"]],
-            "C": [12, ["Sunflower"]],
-            "D": [12, ["Bluebell"]]
+            "Stylish, yet casual and comfy!": [12, ["Daisy", "Tulip"]],
+            "Classic, timeless, and a little fancy": [12, ["Rose"]],
+            "I wear the same thing every day, like a cartoon character": [12, ["Lavender"]],
+            "Lots of bright colors and cool statement pieces": [12, ["Bluebell", "Sunflower"]]
         }
     },
 
     "12": {
-        "question": "THIS IS THE END!",
+        "question": "What would hurt the most?",
         // image
         "choices": {
-            "A": [13, []],
-            "B": [13, []],
-            "C": [13, []],
-            "D": [13, []]
+            "Being betrayed by a close friend": [13, ["Rose", "Bluebell"]],
+            "Making a mistake that hurts someone you love": [13, ["Lavender"]],
+            "Feeling like you aren't as great as the world thinks you are": [13, ["Tulip"]],
+            "Realizing that you cared too much": [13, ["Sunflower"]]
+        }
+    },
+
+    "13": {
+        "question": "You and a super intelligent snail are both immortal, however you will wilt and die if the snail touches you. It always knows where you are and slowly crawls toward you. What's your plan?",
+        // image
+        "choices": {
+            "Seal it in a jar": [14, ["Daisy", "Tulip"]],
+            "Move to a salt flat": [14, ["Sunflower", "Rose"]],
+            "Befriend the snail and ask it nicely to not touch you": [14, ["Lavender", "Bluebell"]]
+        }
+    },
+
+    "14": {
+        "question": "How much aura do you have?",
+        // image
+        "choices": {
+            "Zero, I am very shy": [15, ["Daisy"]],
+            "I have enough": [15, ["Sunflower", "Lavender"]],
+            "A lot, navigating social situations is usually intuitive for me": [15, ["Rose", "Bluebell"]],
+            "Infinite aura: empires crumble at my feet": [15, ["Tulip"]]
+        }
+    },
+
+    "15": {
+        "question": "What happens to you in the movie of your life?",
+        // image
+        "choices": {
+            "I move to a garden in the countryside and embark on a heartwarming journey of self-growth": [16, ["Daisy"]],
+            "I sacrifice everything to make a groundbreaking scientific discovery that saves billions of flowers": [16, ["Sunflower", "Lavender"]],
+            "I team up with my ex-best friend/lover to win a gold medal in the Flower Olympics": [16, ["Tulip", "Bluebell"]],
+            "I have a tragic, short-lived love affair, and I look for them in everyflower I meet": [16, ["Rose"]]
+        }
+    },
+
+    "16": {
+        "question": "Last question! Choose a non-flower plant and its symbolism:",
+        // image
+        "choices": {
+            "Four-leaf clover: good luck": [17, ["Daisy", "Sunflower"]],
+            "Monkshood: \"Danger is near\"": [17, ["Tulip", "Bluebell"]],
+            "Laurel: glory and honor": [17, ["Rose"]],
+            "Bamboo: longevity and strength": [17, ["Lavender"]]
         }
     }
-
 }
 
 const personalities = {
