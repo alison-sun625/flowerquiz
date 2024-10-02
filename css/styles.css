@@ -3,6 +3,15 @@
     src: url('../Nanum_Pen_Script/NanumPenScript-Regular.ttf') format('truetype');
 }
 
+/* * {
+    margin: 0;
+    padding: 0;
+    outline: 0;   
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ } */
+
 body, html {
     height: 100%;
     margin: 0;
