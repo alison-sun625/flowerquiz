@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Nanum_Pen_Script';
+    src: url('../Nanum_Pen_Script/NanumPenScript-Regular.ttf') format('truetype');
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nanum_Pen_Script', sans-serif;
+}
+
+#start-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%; 
+}
+
+.title {
+    font-size: 30px;
+}
+
+#start-button {
+    border-radius: 8px;
+    height: 48px;
+    cursor: pointer;
+    background-color: #fdf7e9;
+    border: 0.5px;
+    font-family: 'Nanum_Pen_Script', sans-serif;
+    font-size: 21px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.container {
+    /* width: 100%;
+    max-width: 400px;
+    aspect-ratio: 9 / 16;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    */
+    width: 100vw; /* full viewport width */
+    height: calc(100vw * (16 / 9)); /* maintain 9:16 aspect ratio */
+    max-height: 150vh; /* full viewport height */
+    max-width: calc(100vh * (9 / 16));
+    padding: 20px;
+    border-radius: 10px;
+    background-color: darkseagreen; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question-text {
+    font-size: 24px;
+}
+
+.image-container {
+    display: flex;                 /* Use flexbox */
+    justify-content: center;       /* Center horizontally */
+    align-items: center;           /* Center vertically (if necessary) */
+    margin: 0 auto;                /* Center in the parent container */
+}
+
+#question-image {
+    display: none;    /* Hide it on the start screen */
+    max-width: 400px;       /* Set the maximum width */
+    max-height: 300px;      /* Set the maximum height */
+    width: auto;             /* Keep width proportional */
+    height: auto;            /* Keep height proportional */
+}
+
+.choices {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    align-items: center; /* Center the buttons horizontally */
+    gap: 10px; /* Space between the buttons */
+    margin-top: 2rem; /* Space above the choices container */
+}
+
+.choices button {
+    border-radius: 8px;
+    height: 48px;
+    cursor: pointer;
+    background-color: #fdf7e9;
+    border: 0.5px;
+    font-family: 'Nanum_Pen_Script', sans-serif;
+    font-size: 21px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+@media (hover: hover) {
+    #start-button:hover {
+        background-color: #f3dba7;
+    }
+    .choice-button:hover {
+        background-color: #f3dba7;
+    }
+    .share-button:hover {
+        background-color: #f3dba7;
+    }
+}
+
+.result-text {
+    font-size: 30px;
+}
+
+.share-button {
+    border-radius: 8px;
+    height: 48px;
+    cursor: pointer;
+    background-color: #fdf7e9;
+    border: 0.5px;
+    font-family: 'Nanum_Pen_Script', sans-serif;
+    font-size: 21px;
+    transition: background-color 0.3s, transform 0.3s;
+}
