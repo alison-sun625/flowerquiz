@@ -13,6 +13,7 @@
  } */
 
 body, html {
+    color: black;
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -34,9 +35,11 @@ body, html {
 }
 
 #start-button {
+    border: none;
     border-radius: 8px;
     height: 48px;
     cursor: pointer;
+    color: black;
     background-color: #fdf7e9;
     border: 0.5px;
     font-family: 'Nanum_Pen_Script', sans-serif;
@@ -97,9 +100,11 @@ body, html {
 }
 
 .choices button {
+    border: none;
     border-radius: 8px;
     height: 48px;
     cursor: pointer;
+    color: black;
     background-color: #fdf7e9;
     border: 0.5px;
     font-family: 'Nanum_Pen_Script', sans-serif;
@@ -124,9 +129,11 @@ body, html {
 }
 
 .share-button {
+    border: none;
     border-radius: 8px;
     height: 48px;
     cursor: pointer;
+    color: black;
     background-color: #fdf7e9;
     border: 0.5px;
     font-family: 'Nanum_Pen_Script', sans-serif;
